@@ -67,16 +67,16 @@ build_error() {
     echo "unknown argument"
 }
 
-if [ $# -lt 1 ]; then
-	echo "error: target missing!"
-    echo "available targets: mac|linux|ios|android"
-    echo "sample usage: ./build.sh mac"
-else
-	if [ $1 = "android" ]; then
-		build_for_android
-	elif [ $1 = "ios" ]; then
-		build_for_ios
-	else
-		build_error
-	fi
-fi
+#if [ $# -lt 1 ]; then
+#    echo "error: target missing!"
+#    echo "available targets: mac|linux|ios|android"
+#    echo "sample usage: ./build.sh mac"
+#else
+#    if [ $1 = "android" ]; then
+build_for_android
+#    elif [ $1 = "ios" ]; then
+#        build_for_ios
+#    else
+#        build_error
+#    fi
+#fi
